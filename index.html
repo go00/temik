@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт строительной компании</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&family=Raleway:wght@100;300;800&display=swap" rel="stylesheet">
@@ -30,7 +30,10 @@
                 </div>
             </div>
             <div class="social">
-                <img src="photo/social.svg" alt="">
+                <a href="https://vk.com/kirkursedov666"><img src="photo/vk_social.png" alt=""></a>
+                <a href="https://vk.com/kirkursedov666"><img src="photo/whatsapp_social.png" alt=""></a>
+                <a href="https://vk.com/kirkursedov666"><img src="photo/telegram_social.png" alt=""></a>
+                <a href="https://vk.com/kirkursedov666"><img src="photo/instagram_social.png" alt=""></a>
             </div>
         </div>
     </header>
@@ -41,6 +44,10 @@
                 <img src="photo/logo.svg" alt="">
                 <p>Ремонт и продажа турбин для <br> легковых и грузовых авто с <br> курьерской доставкой по России.
                 </p>
+            </div>
+            <div onclick="burger()" class="burger">
+                <img src="photo/burger_menu.png" alt="">
+
             </div>
 
             <ul class="menu">
@@ -63,7 +70,7 @@
             <div class="remont">
                 <p class="remont_p">Ремонт, продажа турбин и <br> комплектующих</p>
                 <p class="remont_p">с гарантией 1 год <br> без ограничения пробега</p>
-                <img src="photo/line.svg" alt="">
+                <img src="photo/line.png" alt="">
                 <p class="remont_p2">
                     Бесплатная диагностика в качестве ремонта.<br> В наличии более 500 наименований <br>запчастей напрямую от производителя.
                 </p>
@@ -101,7 +108,7 @@
             </div>
             <div class="block">
                 <div class="chel_photo">
-                    <img src="photo/chel.svg" alt="">
+                    <img src="photo/chel.png" alt="">
                 </div>
                 <div class="block_galochka">
                     <table>
@@ -175,20 +182,20 @@
             <h1 class="ceni_zagolovok">Самые выгодные цены в Московской области!</h1>
             <div class="block_cenis">
                 <div class="block_ceni">
-                    <img src="photo/bg_icon1.svg" alt="">
+                    <img src="photo/bg_icon1.png" alt="">
                     <p class="ceni_text"><span style="color: #0F68AC;">Рекомендации</span> по<br> использованию и установке.</p>
                     <p class="ceni_text_2">После ремонта, вместе с турбиной<br> курьер доставит бланк с личными<br> рекомендациями от мастера, где будут<br> указаны..</p>
                     <a class="ceni_a" href="">УЗНАТЬ БОЛЬШЕ</a>
                 </div>
                 <div class="block_ceni">
-                    <img src="photo/bg_icon2.svg" alt="">
+                    <img src="photo/bg_icon2.png" alt="">
                     <p class="ceni_text">Если <span style="color: #0F68AC;">проблема</span> не в <br> турбине?</p>
                     <p>Если у вас неоднозначная проблема,<br> мы советуем посетить наш автосервис<br> на автомобиле, чтобы мастера провели<br> полную диагностику</p>
                     <a class="ceni_a" href="">УЗНАТЬ БОЛЬШЕ</a>
 
                 </div>
                 <div class="block_ceni">
-                    <img src="photo/bg_icon3.svg" alt="">
+                    <img src="photo/bg_icon3.png" alt="">
                     <p class="ceni_text">Ремонт занимает 4 часа.<br> <span style="color: #0F68AC;">Гарантия</span> 1 год.</p>
                     <p>Полная гарантия дается при условии<br> правильной установки турбины и<br> эксплуатации. Инструкция по<br> установке и..</p>
                     <a class="ceni_a" href="">УЗНАТЬ БОЛЬШЕ</a>
@@ -201,7 +208,12 @@
         <div class="container">
             <p>TurboCM является официальным дистрибьютором европейских, <br> американских и японских производителей</p>
             <p>Продажа автозапчастей и турбин по <br> Москве и МО с гарантией производителя</p>
-            <img src="photo/avtozapchasti.svg" alt="">
+            <div class="card_blocks">
+                <img src="photo/card1.png" alt="">
+                <img src="photo/card2.png" alt="">
+                <img src="photo/card3.png" alt="">
+                <img src="photo/card4.png" alt="">
+            </div>
             <a href="">Открыть каталог</a>
         </div>
     </div>
@@ -314,6 +326,7 @@
         </div>
         <p class="last_footer">© Turbo-CM 2022</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

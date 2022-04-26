@@ -62,11 +62,19 @@ header {
 
 .social {
     display: flex;
-    align-items: center;
     border-left: 1px solid #D7E1E7;
     border-right: 1px solid #D7E1E7;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+.social a img {
+    margin: 0px 10px 0 10px;
 }
 
 .telephone {
@@ -140,7 +148,7 @@ header {
 }
 
 .header_photo {
-    background: url(../photo/фон_header.svg) no-repeat;
+    background: url(../photo/фон_header.png) no-repeat;
     height: 100vh;
 }
 
@@ -346,14 +354,15 @@ header {
 
 .prodaja {
     height: 100vh;
-    background: url(../photo/фон_siniy.svg) no-repeat;
+    background: url(../photo/фон_siniy.png) no-repeat;
     background-size: cover;
     text-align: center;
 }
 
-.prodaja img {
-    margin: 0 auto;
-    width: 100%;
+.card_blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .prodaja p:first-child {
@@ -448,7 +457,7 @@ header {
 }
 
 .zayavka {
-    background: url(../photo/fon_strelochka.svg) no-repeat;
+    background: url(../photo/fon_strelochka.png) no-repeat;
     padding-top: 50px;
     padding-bottom: 10px;
 }
@@ -494,7 +503,7 @@ footer .logo img {
 }
 
 footer {
-    background: url(../photo/fon_strelochka_siniy.svg) no-repeat;
+    background: url(../photo/fon_strelochka_siniy.png) no-repeat;
     width: 100%;
     padding-bottom: 27px;
     background: #013E64;
@@ -620,7 +629,7 @@ footer {
         padding: 20px 30px;
     }
     .prodaja {
-        height: 95vh;
+        height: 100vh;
     }
     .container {
         width: 80%;
@@ -647,10 +656,18 @@ footer {
     .prodaja a {
         padding: 20px 28px;
         font-size: 16px;
+        margin: 0;
     }
     .prodaja {
-        height: 60vh;
+        height: 125vh;
         background: #013E64;
+        overflow: hidden;
+    }
+    .card_blocks img {
+        margin-bottom: 40px;
+    }
+    .card_blocks {
+        justify-content: space-around;
     }
     .o_nas .btnn {
         padding: 30px 183px;
@@ -664,7 +681,7 @@ footer {
     }
     .zayavka_form .btn_form {
         padding-bottom: 5px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .block_galochka {
         padding: 50px 165px;
@@ -677,14 +694,20 @@ footer {
     .block_ceni {
         margin-top: 50px;
     }
+    .map div {
+        width: 905px;
+    }
 }
 
 @media screen and (max-width: 769px) {
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    .header_photo {}
     .container {
         width: 95%;
-    }
-    .prodaja {
-        height: 85vh;
+        position: relative;
     }
     .map div {
         width: 725px;
@@ -695,6 +718,36 @@ footer {
     }
     .zayavka_form {
         flex-wrap: wrap;
+    }
+    .header .telephone {
+        display: none;
+        background: #0F68AC;
+    }
+    .menu {
+        position: absolute;
+        background: #fff;
+        top: 100px;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .telephone {
+        position: absolute;
+        top: 200px;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu {
+        display: none;
+        margin-top: 30px;
+    }
+    header .social {
+        display: none;
+    }
+    header .clock {
+        margin-left: 70px;
+        border: none;
     }
     .o_nas {
         flex-wrap: wrap;
@@ -732,6 +785,12 @@ footer {
     .block_ceni {
         padding-top: 60px;
     }
+    .burger {
+        display: block;
+        width: 45px;
+        height: 35px;
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -749,10 +808,10 @@ footer {
     .container {
         width: 90%;
     }
-    .header .telephone {
+    .telephone {
         display: none;
     }
-    .header .menu {
+    .menu {
         display: none;
     }
     header .social {
@@ -823,13 +882,16 @@ footer {
         padding: 0;
     }
     .prodaja {
-        height: 90vh;
+        height: 230vh;
     }
     .zayavka_form .btn_form {
         padding-bottom: 24px;
     }
     .chel_photo img {
         width: 385px;
+    }
+    .prodaja a {
+        float: none;
     }
 }
 
@@ -859,4 +921,20 @@ footer {
     .footer_blocks {
         padding-top: 60px;
     }
+}
+
+.header .active {
+    display: inline-flex;
+}
+
+.opaciti {
+    opacity: 0;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.govno {
+    display: none;
 }
